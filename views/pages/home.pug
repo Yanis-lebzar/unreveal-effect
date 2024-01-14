@@ -1,0 +1,55 @@
+extends ../template.pug 
+
+block variables 
+  - var template = 'home'
+
+block content   
+  .frame
+      .frame__title
+          h1.frame__title-main Unreveal Effects
+          a.frame__title-back(href="https://tympanus.net/codrops/?p=65427", aria-label="Back to the article")
+              //- span.oh__inner Back to the article
+              svg(width="16px", height="16px", viewBox="0 0 24 24")
+                  path(vector-effect="non-scaling-stroke", d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z")
+          a.frame__prev(href="http://tympanus.net/Development/ScrollPanels/") Previous demo
+      nav.frame__demos
+          span.frame__demos-item Rotated
+          a.frame__demos-item(href="index2.html") Circle
+          a.frame__demos-item(href="index3.html") Strip
+  .contentt
+      each item in items
+          figure.content__item
+              h2.content__item-title.oh
+                  span.oh__inner=item.title
+              .content__item-img-wrap
+                  .content__item-img(style="background-image: url(assets/" + item.img + ".avif)")
+              figcaption.content__item-caption=item.caption
+
+  .content__overlay
+      .overlay__inner
+  .preview
+      each item in previewItems
+          .preview__item
+              .preview__img__wrapper 
+                .preview__item-img-outer
+                    .preview__item-img-wrap
+                        .preview__item-img(style="background-image: url(assets/" + item.img + ".avif)")
+                    span.oh__inner=item.title
+              .preview__informations__wrapper      
+                  .preview__item-box.preview__item-box--left
+                      h3.preview__item-box-title.oh
+                          span.oh__inner=item.boxLeft.title
+                      p.preview__item-box-desc=item.boxLeft.desc
+                  .preview__item-box.preview__item-box--middle
+                      h3.preview__item-subtitle.oh
+                          span.oh__inner=item.subtitle
+                      span.preview__item-meta.oh
+                          span.oh__inner=item.meta
+                      button.unbutton.preview__back(aria-label="Back to content")
+                          svg(width="200px", height="36px", viewBox="0 0 50 9")
+                              path(vector-effect="non-scaling-stroke", d="m0 4.5 5-3m-5 3 5 3m45-3h-77")
+                  .preview__item-box.preview__item-box--right
+                      h3.preview__item-box-title.oh
+                          span.oh__inner=item.boxRight.title
+                      p.preview__item-box-desc=item.boxRight.desc
+
