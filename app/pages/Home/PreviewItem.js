@@ -36,5 +36,6 @@ export class PreviewItem {
     this.DOM.descriptions = this.DOM.el.querySelectorAll('.preview__item-box-desc')
     this.DOM.title = this.DOM.el.querySelector('.preview__item-title')
     this.DOM.boxes = this.DOM.el.querySelectorAll('.preview__item-box')
+    this.DOM.backCtrl = this.DOM.el.querySelector('.preview__back')
   }
 }

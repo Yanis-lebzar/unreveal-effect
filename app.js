@@ -106,50 +106,49 @@ const previewItems = [
       title: 'Location',
       desc: 'April is the cruellest month, breeding lilacs out of the dead land, mixing memory and desire, stirring dull roots with spring rain.'
     }
+  },
+  {
+    img: '2',
+    title: 'Brave',
+    subtitle: 'El Búho',
+    meta: '2007',
+    boxLeft: {
+      title: 'Setting',
+      desc: 'Madame sosostris, famous clairvoyante, had a bad cold, nevertheless is known to be the wisest woman in europe.'
+    },
+    boxRight: {
+      title: 'Location',
+      desc: 'Winter kept us warm, covering earth in forgetful snow, feeding a little life with dried tubers.'
+    }
+  },
+  {
+    img: '3',
+    title: 'Rose',
+    subtitle: 'Nocturne',
+    meta: '2010',
+    boxLeft: {
+      title: 'Setting',
+      desc: 'The chair she sat in, like a burnished throne, glowed on the marble, where the glass.'
+    },
+    boxRight: {
+      title: 'Location',
+      desc: 'Doubled the flames of sevenbranched candelabra reflecting light upon the table as the glitter of her jewels rose to meet it.'
+    }
+  },
+  {
+    img: '4',
+    title: 'Lily',
+    subtitle: 'Outsider',
+    meta: '2021',
+    boxLeft: {
+      title: 'Setting',
+      desc: 'From satin cases poured in rich profusion; in vials of ivory and coloured glass.'
+    },
+    boxRight: {
+      title: 'Location',
+      desc: 'Huge sea-wood fed with copper burned green and orange, framed by the coloured stone, in which sad light a carvéd dolphin swam.'
+    }
   }
-  // },
-  // {
-  //   img: 'img/2.avif',
-  //   title: 'Brave',
-  //   subtitle: 'El Búho',
-  //   meta: '2007',
-  //   boxLeft: {
-  //     title: 'Setting',
-  //     desc: 'Madame sosostris, famous clairvoyante, had a bad cold, nevertheless is known to be the wisest woman in europe.'
-  //   },
-  //   boxRight: {
-  //     title: 'Location',
-  //     desc: 'Winter kept us warm, covering earth in forgetful snow, feeding a little life with dried tubers.'
-  //   }
-  // },
-  // {
-  //   img: 'img/3.avif',
-  //   title: 'Rose',
-  //   subtitle: 'Nocturne',
-  //   meta: '2010',
-  //   boxLeft: {
-  //     title: 'Setting',
-  //     desc: 'The chair she sat in, like a burnished throne, glowed on the marble, where the glass.'
-  //   },
-  //   boxRight: {
-  //     title: 'Location',
-  //     desc: 'Doubled the flames of sevenbranched candelabra reflecting light upon the table as the glitter of her jewels rose to meet it.'
-  //   }
-  // },
-  // {
-  //   img: 'img/4.avif',
-  //   title: 'Lily',
-  //   subtitle: 'Outsider',
-  //   meta: '2021',
-  //   boxLeft: {
-  //     title: 'Setting',
-  //     desc: 'From satin cases poured in rich profusion; in vials of ivory and coloured glass.'
-  //   },
-  //   boxRight: {
-  //     title: 'Location',
-  //     desc: 'Huge sea-wood fed with copper burned green and orange, framed by the coloured stone, in which sad light a carvéd dolphin swam.'
-  //   }
-  // }
 ]
 
 const handleRequest = async api => {
